@@ -11,3 +11,9 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 - [La Bénédiction de l'Anguille d'Or 2/4](Web/AmuletteAkawa/BenedictionAnguilleOr)
 - [L'Illusion de la Chouette Nocturne 3/4](Web/AmuletteAkawa/IllusionChouetteNocturne)
 - [Le Totem de la Tortue Géante 4/4](Web/AmuletteAkawa/TotemTortueGeante)
+
+### Pwn
+- [Gestes](Pwn/LeCheminDuGerrier/Gestes)
+- [Paroles](Pwn/LeCheminDuGerrier/Paroles)
+- [Actes](Pwn/LeCheminDuGerrier/Actes)
+- [Combat final](Pwn/LeCheminDuGerrier/Combats)
