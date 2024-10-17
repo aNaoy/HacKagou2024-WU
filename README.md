@@ -13,7 +13,7 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 - [Le Totem de la Tortue Géante 4/4](Web/AmuletteAkawa/TotemTortueGeante)
 
 ### Pwn
-- [Gestes](Pwn/LeCheminDuGuerrier/Gestes)
-- [Paroles](Pwn/LeCheminDuGuerrier/Paroles)
-- [Actes](Pwn/LeCheminDuGuerrier/Actes)
-- [Combat final](Pwn/LeCheminDuGuerrier/Combats)
+- [Gestes 1/4](Pwn/LeCheminDuGuerrier/Gestes)
+- [Paroles 2/4](Pwn/LeCheminDuGuerrier/Paroles)
+- [Actes 3/4](Pwn/LeCheminDuGuerrier/Actes)
+- [Combat final 4/4](Pwn/LeCheminDuGuerrier/Combats)
