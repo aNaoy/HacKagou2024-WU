@@ -106,6 +106,7 @@ Nous devons aussi vérifier si la stack est bien alignée, en effet, si la valeu
 
 <details>
   <summary>Pourquoi aligner la stack ?</summary>
+
 Lorsque nous exploitons une vulnérabilité de buffer overflow pour rediriger l'exécution vers une fonction spécifique comme guerrier(), il est crucial de prendre en compte l'alignement de la pile (stack) pour assurer le bon fonctionnement du programme.
 
 Dans l'architecture x86_64, la convention d'appel (ABI - Application Binary Interface) stipule que le pointeur de pile ($rsp) doit être aligné sur 16 octets avant l'appel d'une fonction. Cet alignement est nécessaire car de nombreuses instructions SSE et certaines fonctions de la bibliothèque standard C supposent que la pile est correctement alignée. Si cet alignement n'est pas respecté, cela peut entraîner des comportements indéfinis, des plantages ou des erreurs d'exécution.
@@ -116,9 +117,11 @@ Lorsque guerrier() exécute puts("Félicitations, jeune guerrier, votre bravoure
 
 Pour résoudre ce problème d'alignement, il est nécessaire de :
 
-Ajuster l'alignement de la pile : Modifier notre payload pour ajouter du remplissage (padding) afin de réaligner $rsp sur un multiple de 16 octets avant l'appel à guerrier(). Cela garantit que toutes les fonctions appelées au sein de guerrier() trouvent la pile dans l'état attendu.
-Utiliser une autre méthode d'exploitation : Comme vous l'avez mentionné, injecter directement l'adresse des instructions qui préparent les arguments pour system() et effectuer l'appel peut contourner le problème d'alignement, car nous contrôlons précisément l'état de la pile et pouvons nous assurer qu'elle est correctement alignée.
+* Ajuster l'alignement de la pile : Modifier notre payload pour ajouter du remplissage (padding) afin de réaligner $rsp sur un multiple de 16 octets avant l'appel à guerrier(). Cela garantit que toutes les fonctions appelées au sein de guerrier() trouvent la pile dans l'état attendu.
+* Utiliser une autre méthode d'exploitation : Comme vous l'avez mentionné, injecter directement l'adresse des instructions qui préparent les arguments pour system() et effectuer l'appel peut contourner le problème d'alignement, car nous contrôlons précisément l'état de la pile et pouvons nous assurer qu'elle est correctement alignée.
+
 En résumé, le souci d'alignement de la pile provient du fait que les conventions d'appel en x86_64 exigent un alignement spécifique pour garantir le bon fonctionnement des fonctions. Ne pas respecter cet alignement lors de l'exploitation d'un buffer overflow peut conduire à des comportements imprévus ou à des plantages, ce qui nécessite des ajustements spécifiques dans notre méthode d'exploitation pour assurer la réussite de l'attaque.
+
 </details>
 
 
