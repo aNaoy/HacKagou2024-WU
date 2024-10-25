@@ -104,6 +104,24 @@ Registers point to pattern buffer:
 
 Nous devons aussi vérifier si la stack est bien alignée, en effet, si la valeur de rsp n'est pas divisible par 0x10 (16 en hexadécimal), la suite de l'exécution ne se passera pas comme nous le souhaiterions en fonction de l'adresse de la fonction qui se retrouvera au sommet de la pile.
 
+<details>
+  <summary>Pourquoi aligner la stack ?</summary>
+Lorsque nous exploitons une vulnérabilité de buffer overflow pour rediriger l'exécution vers une fonction spécifique comme guerrier(), il est crucial de prendre en compte l'alignement de la pile (stack) pour assurer le bon fonctionnement du programme.
+
+Dans l'architecture x86_64, la convention d'appel (ABI - Application Binary Interface) stipule que le pointeur de pile ($rsp) doit être aligné sur 16 octets avant l'appel d'une fonction. Cet alignement est nécessaire car de nombreuses instructions SSE et certaines fonctions de la bibliothèque standard C supposent que la pile est correctement alignée. Si cet alignement n'est pas respecté, cela peut entraîner des comportements indéfinis, des plantages ou des erreurs d'exécution.
+
+Dans notre cas, en écrasant $rsp avec l'adresse de la fonction guerrier(), nous redirigeons effectivement le flux d'exécution vers cette fonction. Cependant, le buffer overflow et l'écrasement du pointeur de pile peuvent désaligner la pile. Cela signifie que lorsque guerrier() est appelée, la pile n'est plus alignée sur 16 octets comme l'exige l'ABI.
+
+Lorsque guerrier() exécute puts("Félicitations, jeune guerrier, votre bravoure mérite les honneurs..."), cette fonction de la bibliothèque standard s'attend à ce que la pile soit correctement alignée. Si ce n'est pas le cas, elle peut fonctionner partiellement (afficher "victoire") mais rencontrer des problèmes lors d'appels internes ou de l'exécution d'instructions SSE, ce qui peut entraîner un arrêt du programme ou sa sortie prématurée après le puts().
+
+Pour résoudre ce problème d'alignement, il est nécessaire de :
+
+Ajuster l'alignement de la pile : Modifier notre payload pour ajouter du remplissage (padding) afin de réaligner $rsp sur un multiple de 16 octets avant l'appel à guerrier(). Cela garantit que toutes les fonctions appelées au sein de guerrier() trouvent la pile dans l'état attendu.
+Utiliser une autre méthode d'exploitation : Comme vous l'avez mentionné, injecter directement l'adresse des instructions qui préparent les arguments pour system() et effectuer l'appel peut contourner le problème d'alignement, car nous contrôlons précisément l'état de la pile et pouvons nous assurer qu'elle est correctement alignée.
+En résumé, le souci d'alignement de la pile provient du fait que les conventions d'appel en x86_64 exigent un alignement spécifique pour garantir le bon fonctionnement des fonctions. Ne pas respecter cet alignement lors de l'exploitation d'un buffer overflow peut conduire à des comportements imprévus ou à des plantages, ce qui nécessite des ajustements spécifiques dans notre méthode d'exploitation pour assurer la réussite de l'attaque.
+</details>
+
+
 ```bash
 gdb-peda$ p/x $rsp
 $1 = 0x7fffffffdc78
