@@ -105,7 +105,7 @@ Registers point to pattern buffer:
 Nous devons aussi vérifier si la stack est bien alignée, en effet, si la valeur de $rsp n'est pas divisible par 0x10 (16 en hexadécimal), la suite de l'exécution ne se passera pas comme nous le souhaiterions en fonction de l'adresse de la fonction qui se retrouvera au sommet de la pile.
 
 <details>
-  <summary>**Pourquoi aligner la stack ?**</summary>
+  <summary>** Pourquoi aligner la stack ? **</summary>
 
 Lorsque nous exploitons une vulnérabilité de buffer overflow pour rediriger l'exécution vers une fonction spécifique comme ```guerrier()```, il est crucial de prendre en compte l'alignement de la pile (stack) pour assurer le bon fonctionnement du programme.
 
