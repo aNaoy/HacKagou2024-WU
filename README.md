@@ -37,5 +37,5 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 - [LesMaux](OSINT/LesMaux/Writeup.md)
 - [WarmUP](OSINT/WarmUP/Writeup.md)
 
-### Forensic
+### Stegano
 - [Puzzle](Stegano/Puzzle/Writeup.md)
