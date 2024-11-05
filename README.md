@@ -39,3 +39,8 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 
 ### Stegano
 - [Puzzle](Stegano/Puzzle/Writeup.md)
+
+### Autres
+- [HKGOU](Autres/HKGOU)
+- [LaPieceMysterieuse](Autres/LaPieceMysterieuse)
+- [WaiEP](Autres/WaiEP)
