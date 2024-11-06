@@ -22,6 +22,7 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 - [10OR](Crypto/10OR/Writeup.md)
 - [LaPerleMaudite](Crypto/LaPerleMaudite/Writeup.md)
 - [LesHashesdeMaui](Crypto/LesHashesDeMaui/Writeup.md)
+- [Mystère balaise sur Nengone](Crypto/MystèreBalaiseSurNengone/Mystère_balaise_sur_Nengoné_WU.pdf)
 
 ### Forensic
 - [GEET](Forensic/GEET/Writeup.md)
