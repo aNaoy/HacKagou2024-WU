@@ -41,6 +41,7 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 
 ### Stegano
 - [Puzzle](Stegano/Puzzle/Writeup.md)
+- [Bel Oiseau](Stegano/BelOiseau/BelOiseau_WU.pdf)
 
 ### Autres
 - [HKGOU](Autres/HKGOU)
