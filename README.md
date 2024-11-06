@@ -36,6 +36,7 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 - [LEPendentifSacré](OSINT/LePendentifSacre/Writeup.md)
 - [LesMaux](OSINT/LesMaux/Writeup.md)
 - [WarmUP](OSINT/WarmUP/Writeup.md)
+- [BelleBaie](OSINT/BelleBaie/Belle_baie_WU.pdf)
 
 ### Stegano
 - [Puzzle](Stegano/Puzzle/Writeup.md)
