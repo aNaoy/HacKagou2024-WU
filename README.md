@@ -25,6 +25,7 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 - [Mystère balaise sur Nengone](Crypto/MystèreBalaiseSurNengone/Mystère_balaise_sur_Nengoné_WU.pdf)
 - [Koumac en code](Crypto/KoumacEnCode/Koumac_en_code_WU.pdf)
 - [Il cherche sa famille](Crypto/IlChercheSaFamille/Il_cherche_sa_famille_WU.pdf)
+- [Fantôme de l'ISEE](Crypto/Fantôme_de_l_ISEE/Fantôme_de_l_ISEE_WU.pdf)
 
 ### Forensic
 - [GEET](Forensic/GEET/Writeup.md)
