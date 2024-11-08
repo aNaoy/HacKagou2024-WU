@@ -32,6 +32,7 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 - [LaBiblio](Forensic/LaBiblioteque/Writeup.md)
 - [Malediction](Forensic/malediction/Writeup.md)
 - [UneFauteQuiCoute](Forensic/UneFauteQuiCoute/Writeup.md)
+- [L'agence](Forensic/Lagence/Writeup.md)
 
 ### OSINT
 - [LaLumière](OSINT/LaLumière/Writeup.md)
@@ -42,6 +43,8 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 - [WarmUP](OSINT/WarmUP/Writeup.md)
 - [Belle baie](OSINT/BelleBaie/Belle_baie_WU.pdf)
 - [Ô ma reine](OSINT/OMaReine/OMaReine_WU.pdf)
+- [La Montagne Maudite](OSINT/LaMontagneMaudite/Writeup.md)
+- [Mon Oncle](OSINT/MonOncle/Writeup.md)
 
 ### Stegano
 - [Puzzle](Stegano/Puzzle/Writeup.md)
@@ -52,3 +55,4 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 - [HKGOU](Autres/HKGOU)
 - [LaPieceMysterieuse](Autres/LaPieceMysterieuse)
 - [WaiEP](Autres/WaiEP)
+- [Easter Egg](Autres/Easter_Egg/Writeup.md)
