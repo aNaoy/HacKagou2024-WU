@@ -1,7 +1,7 @@
 
 ## Enoncé caché
 
-L'énnoncé ce cachait dans le chalmlenge l'Agence. En effet si vous regardiez (ou tombiez dessus de façon random avec un strings) le clipboard du dump, les informations s'affichaient.
+L'énnoncé se cachait dans le chalmlenge l'Agence. En effet si vous regardiez (ou tombiez dessus de façon random avec un strings) le clipboard du dump, les informations s'affichaient.
 
 ```
 vol.py -f mem.vmem --profile=Win7SP1x64 clipboard -v
