@@ -22,6 +22,9 @@ Si on prenait notre petit bonhomme streetview ?
 ![alt text](image-5.png)
 
 
+flag : ``OPENNC{-22.05,166.35}``
+
+
 Pour l'émotion : 
 
 https://www.tiktok.com/@alex.dbl/video/7300875131201654048
