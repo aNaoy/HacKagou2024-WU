@@ -50,6 +50,7 @@ Write-ups officiels du HacKagou 2024 - Contes et légendes d'Océanie
 - [Puzzle](Stegano/Puzzle/Writeup.md)
 - [Bel Oiseau](Stegano/BelOiseau/BelOiseau_WU.pdf)
 - [Hakamanu](Stegano/Hakamanu/Hakamanu_WU.pdf)
+- [L'océanie d'avant](Stegano/L_Oceanie_D_Avant/Writeup.md)
 
 ### Autres
 - [HKGOU](Autres/HKGOU)
