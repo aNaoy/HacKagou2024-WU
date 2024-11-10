@@ -1,29 +1,29 @@
 
 
-## Mission
 
-Trouver ce que cet artefact veut vous transmettre. 
+
+## Scénario
+
+Au cœur du musée de Sydney repose l'un des artefacts les plus mystérieux et précieux de l'histoire, datant d'une époque bien antérieure à celle des dinosaures. Personne ne peut dire avec certitude d'où il provient ni à quelle civilisation il appartenait – peut-être une culture avancée depuis longtemps disparue. Une chose est sûre quelque chose est arrivé.
+
+En vous approchant de cette sphère énigmatique, vous ressentez d'étranges vibrations. Serait-ce un message caché ?
+
+Trouvez le nom de ce qui les a fait disparaitre.
 
 
 ## Résolution
 
 Nous avons un fichier audio, en l'écoutant on remarque des bruits claairement pas là par hasard.
 
-On passe le fichier dans audacity et on observe les spectogrames.
-
-![alt text](Pictures/2.png)
-
-OK ! interessant. et si nous zoomons ?
+On passe le fichier dans l'analyse Spectrale de dcode.  
+https://www.dcode.fr/analyse-spectrale
 
 
 
-![alt text](Pictures/1.png)
+![alt text](image.png)
 
 
-Il faut jouer avec le tempo et les variations de fréquences pour pouvoir déterminer les caractères.
-
-
-Nous etions fort et prospere mais un mal redoutable est arrive voici son nom KERHUON
+"Nous etions fort et prospere mais un mal redoutable est arrive d'une montagne voici son nom KERHUON"
 
 
 Flag : ``OPENNC{KERHUON}``
@@ -43,27 +43,6 @@ Flag : ``OPENNC{KERHUON}``
 
 
 
-Cela nous donne : 
-
-```bash
-68 74 74 70 73 3a 2f 2f 70 61 73 74 65 62 69 6e 2e 63 6f 6d 2f 72 61 77 2f 41 56 45 30 59 37 73 48
-```
-
-
-Passant ce hex dans cyberchef :
-
-https://pastebin.com/raw/AVE0Y7sH
-
-
-Essayant de la passé aussi dans cyberchef
-
-
-![alt text](Pictures/5.png)
-
-
-
-
-Flag : ``OPENNC{nous_n_etions_pas_l4_pour_les_voir}``
 
 
 
